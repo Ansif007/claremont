@@ -7,7 +7,7 @@
   <meta name="description" content="Contact Claremont INC for overseas education counseling, admissions guidance, and study abroad planning.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,9 +21,10 @@
         </div>
       </div>
     </header>
+
     <header class="header">
       <div class="container header__content">
-        <a class="brand" href="index.html">
+        <a class="brand" href="index.html" aria-label="Claremont INC home">
           <span class="brand__mark">C</span>
           <span>
             <strong>Claremont INC</strong>
@@ -45,17 +46,27 @@
     </header>
 
     <main>
-      <section class="page-hero">
-        <div class="container page-hero__content">
-          <p class="eyebrow">Contact</p>
-          <h1>Let’s plan your next academic step.</h1>
-          <p class="lead">Get in touch for counseling, destination guidance, application support, or visa assistance.</p>
+      <section class="inner-hero">
+        <div class="container inner-hero__grid">
+          <div class="inner-hero__copy" data-reveal>
+            <p class="eyebrow">Contact</p>
+            <h1>Let’s shape your next academic move together.</h1>
+            <p class="lead">Reach out for counseling, destination guidance, application support, or visa preparation.</p>
+          </div>
+          <div class="inner-hero__panel" data-reveal>
+            <div class="glow-card">
+              <span>Talk to us about</span>
+              <strong>Admissions</strong>
+              <strong>Visa</strong>
+              <strong>Funding</strong>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="section">
-        <div class="container contact-grid">
-          <div class="contact-card">
+        <div class="container contact-stage">
+          <div class="contact-stage__form" data-reveal>
             <h2>Send an enquiry</h2>
             <form class="contact-form">
               <label>
@@ -81,20 +92,21 @@
               <button class="button button--primary" type="submit">Submit Enquiry</button>
             </form>
           </div>
-          <div class="contact-aside">
-            <article class="detail-card">
+
+          <div class="contact-stage__details">
+            <article class="contact-glass" data-reveal>
               <h3>Visit us</h3>
               <p>Claremont Overseas Education Consultancy, Kurishummoodu, Changanassery, Kerala 686104</p>
             </article>
-            <article class="detail-card">
+            <article class="contact-glass" data-reveal>
               <h3>Call us</h3>
               <a href="tel:+919446534515">+91 9446534515</a>
             </article>
-            <article class="detail-card">
+            <article class="contact-glass" data-reveal>
               <h3>Email us</h3>
               <a href="mailto:admissions@claremontinc.com">admissions@claremontinc.com</a>
             </article>
-            <article class="detail-card detail-card--accent">
+            <article class="contact-glass contact-glass--accent" data-reveal>
               <h3>Office hours</h3>
               <p>Monday to Saturday</p>
               <p>9:00 AM to 6:00 PM</p>

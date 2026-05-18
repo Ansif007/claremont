@@ -7,7 +7,7 @@
   <meta name="description" content="Explore overseas education counseling, university selection, admissions support, visa processing, and other services from Claremont INC.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,9 +21,10 @@
         </div>
       </div>
     </header>
+
     <header class="header">
       <div class="container header__content">
-        <a class="brand" href="index.html">
+        <a class="brand" href="index.html" aria-label="Claremont INC home">
           <span class="brand__mark">C</span>
           <span>
             <strong>Claremont INC</strong>
@@ -45,39 +46,55 @@
     </header>
 
     <main>
-      <section class="page-hero">
-        <div class="container page-hero__content">
-          <p class="eyebrow">Services</p>
-          <h1>End-to-end guidance for studying abroad.</h1>
-          <p class="lead">Our services are designed to reduce confusion, improve decision quality, and keep students moving through the process with confidence.</p>
+      <section class="inner-hero">
+        <div class="container inner-hero__grid">
+          <div class="inner-hero__copy" data-reveal>
+            <p class="eyebrow">Services</p>
+            <h1>Everything a student needs, arranged as one system.</h1>
+            <p class="lead">Our services are designed to remove friction at every stage of the study abroad process, from initial planning to final departure.</p>
+          </div>
+          <div class="inner-hero__panel" data-reveal>
+            <div class="glow-card">
+              <span>Service layers</span>
+              <strong>Counsel</strong>
+              <strong>Apply</strong>
+              <strong>Travel</strong>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="section">
-        <div class="container service-grid">
-          <article class="service-card service-card--large">
+        <div class="container service-spectrum">
+          <article class="spectrum-card spectrum-card--wide" data-reveal>
+            <span>01</span>
             <h3>Overseas Education Counseling</h3>
-            <p>One-on-one counseling sessions to understand academic goals, preferred destinations, timelines, and financial considerations.</p>
+            <p>Profile-based planning for destination choice, course alignment, budget clarity, and admissions timing.</p>
           </article>
-          <article class="service-card service-card--large">
-            <h3>Country, Course, and University Selection</h3>
-            <p>Careful shortlisting based on academic profile, future plans, cost, scholarship opportunities, and visa prospects.</p>
+          <article class="spectrum-card" data-reveal>
+            <span>02</span>
+            <h3>University Selection</h3>
+            <p>Shortlists built around academic fit, value, and long-term goals.</p>
           </article>
-          <article class="service-card service-card--large">
-            <h3>Application and Admission Assistance</h3>
-            <p>Support for application forms, document review, SOP and resume guidance, and admission follow-up.</p>
+          <article class="spectrum-card" data-reveal>
+            <span>03</span>
+            <h3>Admission Assistance</h3>
+            <p>Application review, SOP guidance, and document coordination.</p>
           </article>
-          <article class="service-card service-card--large">
+          <article class="spectrum-card" data-reveal>
+            <span>04</span>
             <h3>Visa Processing</h3>
-            <p>Structured preparation for forms, financial documentation, visa interviews, and country-specific compliance steps.</p>
+            <p>Structured support for documentation, readiness, and submission steps.</p>
           </article>
-          <article class="service-card service-card--large">
-            <h3>Test Preparation Guidance</h3>
-            <p>Preparation support for IELTS, TOEFL, PTE, GRE, GMAT, SAT, and other standardized assessments required for admission.</p>
+          <article class="spectrum-card" data-reveal>
+            <span>05</span>
+            <h3>Test Preparation</h3>
+            <p>Support for IELTS, TOEFL, PTE, GRE, GMAT, SAT, and more.</p>
           </article>
-          <article class="service-card service-card--large">
+          <article class="spectrum-card spectrum-card--accent" data-reveal>
+            <span>06</span>
             <h3>Value Added Services</h3>
-            <p>Assistance with education loans, forex, travel, accommodation, and pre-departure orientation.</p>
+            <p>Education loans, forex, travel, accommodation, and pre-departure planning.</p>
           </article>
         </div>
       </section>

@@ -7,7 +7,7 @@
   <meta name="description" content="Discover popular study destinations and how Claremont INC helps students evaluate options abroad.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,9 +21,10 @@
         </div>
       </div>
     </header>
+
     <header class="header">
       <div class="container header__content">
-        <a class="brand" href="index.html">
+        <a class="brand" href="index.html" aria-label="Claremont INC home">
           <span class="brand__mark">C</span>
           <span>
             <strong>Claremont INC</strong>
@@ -45,68 +46,68 @@
     </header>
 
     <main>
-      <section class="page-hero">
-        <div class="container page-hero__content">
-          <p class="eyebrow">Study abroad</p>
-          <h1>Find a destination that fits your goals, not just the trend.</h1>
-          <p class="lead">We help students compare countries based on academics, affordability, career outcomes, visa pathways, and lifestyle fit.</p>
+      <section class="inner-hero">
+        <div class="container inner-hero__grid">
+          <div class="inner-hero__copy" data-reveal>
+            <p class="eyebrow">Study Abroad</p>
+            <h1>Pick a destination with context, not just trend.</h1>
+            <p class="lead">We help students compare countries through academics, cost, lifestyle, and future opportunity so the choice feels informed from the start.</p>
+          </div>
+          <div class="inner-hero__panel" data-reveal>
+            <div class="glow-card glow-card--compact">
+              <span>Popular routes</span>
+              <strong>UK</strong>
+              <strong>Canada</strong>
+              <strong>Australia</strong>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Popular destinations</p>
-            <h2>Where students often begin their search.</h2>
-          </div>
-          <div class="destination-grid">
-            <article class="destination-card">
-              <h3>United Kingdom</h3>
-              <p>Known for globally recognized universities, shorter master's programs, and strong academic reputation.</p>
-            </article>
-            <article class="destination-card">
-              <h3>Canada</h3>
-              <p>Popular for student-friendly policies, post-study opportunities, and a wide range of institutions.</p>
-            </article>
-            <article class="destination-card">
-              <h3>Australia</h3>
-              <p>Offers strong university options, lifestyle appeal, and high international student participation.</p>
-            </article>
-            <article class="destination-card">
-              <h3>Ireland</h3>
-              <p>Attractive for tech and business pathways, English-speaking programs, and growing student interest.</p>
-            </article>
-            <article class="destination-card">
-              <h3>New Zealand</h3>
-              <p>Offers a quality education system and a supportive environment for international students.</p>
-            </article>
-            <article class="destination-card">
-              <h3>Europe</h3>
-              <p>Includes a range of affordable and specialized options across multiple countries and disciplines.</p>
-            </article>
-          </div>
+        <div class="container atlas-grid">
+          <article class="atlas-card" data-reveal>
+            <h3>United Kingdom</h3>
+            <p>Shorter master's routes and globally recognized institutions.</p>
+          </article>
+          <article class="atlas-card atlas-card--lift" data-reveal>
+            <h3>Canada</h3>
+            <p>Student-friendly policies and strong post-study appeal.</p>
+          </article>
+          <article class="atlas-card" data-reveal>
+            <h3>Australia</h3>
+            <p>High-quality universities with broad international demand.</p>
+          </article>
+          <article class="atlas-card" data-reveal>
+            <h3>Ireland</h3>
+            <p>Attractive for tech, business, and English-speaking academic paths.</p>
+          </article>
+          <article class="atlas-card atlas-card--wide" data-reveal>
+            <h3>New Zealand & Europe</h3>
+            <p>Supportive student environments and a wider mix of specialized, affordable choices.</p>
+          </article>
         </div>
       </section>
 
-      <section class="section section--tint">
-        <div class="container split-panel">
-          <div>
-            <p class="eyebrow">How we guide selection</p>
-            <h2>Better choices come from better comparisons.</h2>
+      <section class="section section--panel">
+        <div class="container canvas-panel">
+          <div class="canvas-panel__headline">
+            <p class="eyebrow">How we compare</p>
+            <h2>Better choices come from looking at the whole picture.</h2>
           </div>
-          <div class="feature-stack">
-            <article class="feature-card">
+          <div class="canvas-panel__content">
+            <div class="canvas-note">
               <h3>Academic fit</h3>
-              <p>We compare programs by discipline strength, structure, and entry requirements.</p>
-            </article>
-            <article class="feature-card">
+              <p>Programs are weighed by structure, discipline strength, and entry requirements.</p>
+            </div>
+            <div class="canvas-note">
               <h3>Budget fit</h3>
-              <p>Students can evaluate tuition, living costs, and financing options more realistically.</p>
-            </article>
-            <article class="feature-card">
+              <p>Tuition, living costs, and financing options are evaluated realistically.</p>
+            </div>
+            <div class="canvas-note">
               <h3>Future fit</h3>
-              <p>We keep long-term goals in view, including work opportunities and overall lifestyle compatibility.</p>
-            </article>
+              <p>Work pathways, lifestyle, and long-term outcomes stay in the conversation.</p>
+            </div>
           </div>
         </div>
       </section>
