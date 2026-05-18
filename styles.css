@@ -2133,6 +2133,138 @@ h3 {
   color: white;
 }
 
+.image-showcase {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 1.4rem;
+  align-items: center;
+}
+
+.image-showcase--reverse {
+  grid-template-columns: 0.95fr 1.05fr;
+}
+
+.image-showcase__figure {
+  position: relative;
+  padding: 1rem;
+  border-radius: 2.1rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(233, 243, 255, 0.9));
+  border: 1px solid rgba(20, 87, 216, 0.12);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.image-showcase__figure::before {
+  content: "";
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  top: -3rem;
+  right: -3rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(74, 163, 255, 0.28), transparent 72%);
+  animation: drift 10s ease-in-out infinite;
+}
+
+.image-showcase__figure img,
+.testimonial-panel--image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+}
+
+.image-showcase__copy {
+  max-width: 32rem;
+}
+
+.image-showcase__copy p:last-child {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+.testimonial-stage {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.testimonial-stage__intro {
+  max-width: 36rem;
+}
+
+.testimonial-stage__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.95fr 0.95fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.testimonial-panel {
+  padding: 1.55rem;
+  border-radius: 1.8rem;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(20, 87, 216, 0.1);
+  box-shadow: var(--shadow);
+}
+
+.testimonial-panel--featured {
+  background: linear-gradient(180deg, #1467f4, #0a2f78);
+  box-shadow: 0 24px 60px rgba(10, 47, 120, 0.26);
+}
+
+.testimonial-panel p {
+  margin: 0 0 1rem;
+  line-height: 1.9;
+  color: var(--muted);
+}
+
+.testimonial-panel strong,
+.testimonial-panel span {
+  display: block;
+}
+
+.testimonial-panel strong {
+  color: var(--brand-deep);
+}
+
+.testimonial-panel span {
+  margin-top: 0.25rem;
+  color: var(--muted);
+}
+
+.testimonial-panel--featured p,
+.testimonial-panel--featured strong,
+.testimonial-panel--featured span {
+  color: white;
+}
+
+.testimonial-panel--image {
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.quote-banner {
+  padding: 1.9rem 2rem;
+  border-radius: 2rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(233, 243, 255, 0.92));
+  border: 1px solid rgba(20, 87, 216, 0.12);
+  box-shadow: var(--shadow);
+}
+
+.quote-banner p {
+  margin: 0 0 0.8rem;
+  font-family: "Merriweather", serif;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  line-height: 1.7;
+  color: var(--brand-deep);
+}
+
+.quote-banner span {
+  color: var(--brand);
+  font-weight: 700;
+}
+
 [data-reveal] {
   opacity: 0;
   transform: translateY(26px) scale(0.98);
@@ -2624,6 +2756,8 @@ h3 {
   .inner-hero__grid,
   .narrative-grid,
   .vision-grid,
+  .image-showcase,
+  .image-showcase--reverse,
   .contact-stage,
   .split-panel,
   .content-grid,
@@ -2651,6 +2785,7 @@ h3 {
   .service-spectrum,
   .atlas-grid,
   .halo-panel__cards,
+  .testimonial-stage__grid,
   .blueprint-grid,
   .country-stack {
     grid-template-columns: 1fr;
